@@ -1,8 +1,24 @@
-from math import pi
-r = float(input ("Input the radius of the circle : "))
-print ("The area of the circle with radius " + str(r) + " is: " + str(pi * r**2))
+# Program to display the Fibonacci sequence up to n-th term
+nterms = int(input("How many terms? "))
 
+# first two terms
+n1, n2 = 0, 1
+count = 0
 
-filename = input("Input the Filename: ")
-f_extns = filename.split(".")
-print ("The extension of the file is : " + f_extns[-1])
+# check if the number of terms is valid
+if nterms <= 0:
+   print("Please enter a positive integer")
+# if there is only one term, return n1
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+# generate fibonacci sequence
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
