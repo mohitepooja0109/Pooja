@@ -14,15 +14,15 @@ while(num < len(list1)):
 
     
 ### list of numbers
-list1 = [12,14,-95,3]
+list2 = [12,14,-95,3]
 num = 0
  
 # using while loop    
-while(num < len(list1)):
+while(num < len(list2)):
      
     # checking condition
-    if list1[num] >= 0:
-        print(list1[num], end = " ")
+    if list2[num] >= 0:
+        print(list2[num], end = " ")
      
     # increment num
     num += 1
